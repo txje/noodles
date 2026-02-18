@@ -1,10 +1,21 @@
 # Changelog
 
-## Unreleased
+## 0.89.0 - 2026-02-18
 
 ### Changed
 
   * cram: Raise minimum supported Rust version (MSRV) to 1.88.0.
+
+  * cram/file_definition: Return an array reference (`&[u8; 20]`) from
+    `FileDefinition::file_id`.
+
+    This previously returned a slice (`&[u8]`).
+
+### Fixed
+
+  * cram/crai/fs: Fix creating destination ([#372]).
+
+[#372]: https://github.com/zaeleus/noodles/pull/372
 
 ## 0.88.0 - 2025-12-11
 
